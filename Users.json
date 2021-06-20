@@ -1,0 +1,11 @@
+{"usrs": [
+        {"username": "user1@email.com",
+         "password": "pass123",
+         "name": "Vinay"
+        },
+        {"username": "user2",
+          "password": "pass321",
+          "name" : "Prakash"
+        }
+    ]
+  }
