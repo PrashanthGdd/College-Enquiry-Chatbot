@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title> Login Page </title>
+<style>
+/* Body{
+	font-family: Calibri,Helvetica, sans-serif;
+	background-color: pink;
+}
+button {
+	background-color: #4CAF50;
+	width: 100%
+	color: orange;
+	padding: 15px;
+	margin: 10px 0px;
+	border: none;
+	cursor:pointer;
+}
+form {
+	border: 3px solid #f1f1f1;
+}
+input[type=text],input[type=password]{
+	width: 100%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 2px solid green;
+	box-sizing: border-box;h
+}
+button:hover{
+	opacity: 0.7;
+}
+.cancelbtn{
+	width: auto;
+	padding: 10px 18px;
+	margin: 10px 5px;
+}
+.container{
+	padding: 25px;
+	background-color: lightblue;
+} */
+
+.home{
+	
+}
+
+.side-cover{
+	padding: 60px 30px 60px 30px;
+    background-image: url('static/leaves.png');
+    height: 500px;
+    width: 350px;
+    margin-left: 0;
+}
+.font{
+	color: white;
+}
+.home-container{
+	margin-top: 6%;
+    box-shadow: 10px 10px 35px black;
+    width: fit-content;
+}
+
+.input-style{
+	width:250px
+}
+
+img{
+    height: 55px;
+    width: 55px;
+    
+}
+
+
+</style>
+</head>
+<body>
+<!--    	< <center><h1> Student Login Form </h1> </center>-->
+<!--	<form action="/login" method="post">-->
+<!--		<div class="container">-->
+<!--			<p>Username : </p>-->
+<!--			<p><input type="text" placeholder="Enter Username" name="username" required/></p>-->
+<!--			<p>Password : </p>-->
+<!--			<p><input type="password" placeholder="Enter Password" name="password" required/></p>-->
+<!--			<p><input type="submit" value="submit"/></p>-->
+<!--		</div>-->
+<!--	</form>-->
+
+	<div class="home">
+		<div class="home-container container-fluid">
+			<div class="row">
+				<div class="col-4 pl-0">
+					<div class="side-cover">
+						<h4 class="display-4 font">Sign Up</h4>
+						<p class="lead pt-3" style="font-size: 18px;color: white;">Hi I am students chat bot, I will give you the precise information on all queries.</p>
+						<div style="margin-top:150px;">
+							<p class="lead signin font" style="font-size: 18px;color: white;">Powered by<br></p>
+							<div class="row d-flex justify-content-around">
+								<img src="{{url_for('static', filename='python.png')}}" />
+								<img src="{{url_for('static', filename='flask.png')}}" />
+								<img src="{{url_for('static', filename='tensorflow.png')}}" />
+								<img src="{{url_for('static', filename='bot.png')}}" />
+							</div>
+						
+	
+						</div> 
+					</div>
+				</div>
+				<div class="col-8 d-flex justify-content-end p-5" style="padding:100px 50px 50px 50px !important">
+<!--					<form action="/login" , method="post" >-->
+<!--						<div class="form-group">-->
+<!--						  <label for="exampleInputEmail1">Email address</label>-->
+<!--						  <input type="text" class="form-control input-style" id="exampleInputEmail1" name="username" aria-describedby="emailHelp" placeholder="Enter username">-->
+<!--						  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+<!--						</div>-->
+<!--						<div class="form-group">-->
+<!--						  <label for="exampleInputPassword1">Password</label>-->
+<!--						  <input type="password" class="form-control input-style" name="password" id="exampleInputPassword1" placeholder="Password">-->
+<!--						</div>-->
+<!--						<button type="submit" value= "submit" class="btn btn-primary">Submit</button>-->
+<!--					  </form>-->
+					 	<center><h1> Student Login Form </h1> </center>
+						<form action="/login" method="post">
+				<div class="container">
+					<p>Username : </p>
+					<p><input type="text" placeholder="Enter Username" name="username" required/></p>
+					<p>Password : </p>
+					<p><input type="password" placeholder="Enter Password" name="password" required/></p>
+					<p><input type="submit" value="submit"/></p>
+				</div>
+			</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+  
+	  
+</body>
+</html>
